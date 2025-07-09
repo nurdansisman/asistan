@@ -1,10 +1,11 @@
-# 🤖 AI Destekli Telegram Asistanı (n8n + OpenAI + Gmail + Takvim)
+# 🤖AI DESTEKLİ TELEGRAM ASİSTANI 
+(n8n + OpenAI + Gmail + Takvim)
 
 Bu proje, no-code otomasyon aracı **n8n** kullanılarak geliştirilmiş bir **Telegram bot sistemidir**. Kullanıcıdan gelen **yazılı** veya **sesli** mesajları işleyerek **OpenAI ile analiz** eder, cevap verir. Ek olarak **Gmail ile e-posta gönderebilir/alabilir**, ve **Google Calendar** entegrasyonuyla takvime etkinlik ekleyebilir.
 
 ---
 
-## ✨ Proje Yetkinlikleri
+## ✨ PROJE YETKİNLİKLERİ
 
 * 📢 Telegram botu ile mesaj alma (yazı ve ses)
 * 🧠 OpenAI GPT-4o ile akıllı mesaj analiz ve yanıtlama
@@ -16,7 +17,7 @@ Bu proje, no-code otomasyon aracı **n8n** kullanılarak geliştirilmiş bir **T
 
 ---
 
-## ⚙️ Nasıl Çalışıyor? – Akış Detayları
+## ⚙️ NASIL ÇALIŞI? 
 
 ### 1. ⚡️ Telegram Trigger
 
@@ -26,8 +27,8 @@ Telegram botuna bir mesaj geldiğinde workflow başlar. Mesaj JSON formatında a
 
 Mesaj türüne bakar:
 
-* `text` varsa: yazılı mesaj akışı
-* `voice.file_id` varsa: sesli mesaj akışı
+* `text` varsa: yazılı mesaj akışı gerçekleşir.
+* `voice.file_id` varsa: sesli mesaj akışı gerçekleşir.
 
 ### 3A. 🖊️ Yazılı Mesaj Akışı
 
@@ -83,26 +84,6 @@ AI Agent içindeki `systemMessage` şu şekilde zaman bilgisi verir:
 
 ---
 
-## 🚀 Kurulum
-
-1. n8n local veya cloud ortama kurulur
-2. Gerekli Credential'lar tanımlanır:
-
-   * Telegram bot token
-   * OpenAI API Key
-   * Google OAuth (Gmail + Calendar)
-3. Redirect URI olarak:
-
-```
-https://senin-domainin/rest/oauth2-credential/callback
-```
-
-girilmelidir (Cloudflare Tunnel veya üretli ngrok.io tavsiye edilir)
-
-4. n8n workflow aktif edilir
-
----
-
 ## 📖 Projeyi Kullananlar için Notlar
 
 * Telegram botun `/start` komutu ile aktif olabilir
@@ -111,9 +92,3 @@ girilmelidir (Cloudflare Tunnel veya üretli ngrok.io tavsiye edilir)
 * Saat bilgisi varsayılan olarak UTC'dir; `Europe/Istanbul` olarak ayarlandı
 
 ---
-
-## 👤 Geliştirici
-
-**Nurdan Sısma**
-Computer Engineering @ Biruni University
-AI destekli sistemler, no-code araçlar ve backend geliştirme ile ilgilenir.
